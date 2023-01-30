@@ -2,6 +2,8 @@
 import tensorflow as tf
 import tensorflow.compat.v1 as tf
 
+# 각종 인자값으로 사용될 하이퍼파라미터 값을 키-값 형태로 지정
+
 tf.app.flags.DEFINE_string('f', '', 'kernel') # 주피터에서 커널에 전달하기 위한 프레그 방법
 tf.app.flags.DEFINE_integer('batch_size', 64, 'batch size') # 배치 크기
 tf.app.flags.DEFINE_integer('train_steps', 20000, 'train steps') # 학습 에포크
